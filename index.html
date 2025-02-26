@@ -8,100 +8,113 @@
   </head>
   <body>
     <header class="header">
-      <div class="logo">
-        <img src="svg/noemi-logo.svg" alt="Логотип сайта" />
-      </div>
-      <nav>
-        <ul class="header-menu">
-          <li><a class="menu" href="#">ГЛАВНАЯ</a></li>
-          <li><a class="menu" href="#">ПОСТЫ</a></li>
-          <li><a class="menu" href="#">СТАТЬИ</a></li>
-          <li><a class="menu" href="#">ТЕГИ</a></li>
-          <li><a class="menu" href="#">ТЕМЫ</a></li>
-          <li><a class="menu" href="#">КОНТАКТЫ</a></li>
-        </ul>
-      </nav>
-      <h1 class="title-intro">Блог о творчестве, спорте, и образе жизни</h1>
+      <div class="container">
+        <a class="logo" href="#"></a>
+        <nav class="header-menu">
+         <ul class="header-menu-list">
+           <li><a class="menu" href="#">ГЛАВНАЯ</a></li>
+           <li><a class="menu" href="#">ПОСТЫ</a></li>
+           <li><a class="menu" href="#">СТАТЬИ</a></li>
+           <li><a class="menu" href="#">ТЕГИ</a></li>
+           <li><a class="menu" href="#">ТЕМЫ</a></li>
+           <li><a class="menu" href="#">КОНТАКТЫ</a></li>
+         </ul>
+        </nav>
+        <h1 class="title-intro">Блог о творчестве, спорте, и образе жизни</h1>
+        <div class="overlay"></div>
+     </div>
+      
     </header>
-    
-    <main class="body">
-      <section class="on-trand">
-        <h2 class="title-on-trand">СЕЙЧАС В ТРЕНДЕ</h2>
-        <title class="line-under-text"></title>
-        <div class="list-on-trand">
+    <section class="on-trand">
+      <h2 class="title-on-trand">СЕЙЧАС В ТРЕНДЕ</h2>
+      <title class="line-under-text"></title>
+      <div class="list-on-trand">
 
-          <div class="item-on-trand">
-            <div class="picture-item-on-trand pic1">
-              <div class="frame-on-trand">
-                <a href="#" class="link-category">Lifestyle</a>
-                <a href="#" class="link-category">INTERIOR</a>
-                <h2 class="title-item-on-trand">Сейчас в тренде: сад  на подоконнике</h2>          
-              </div>
+        <div class="item-on-trand">
+          <div class="picture-item-on-trand pic1">
+            <div class="frame-on-trand">
+              <a href="#" class="link-category">Lifestyle</a>
+              <a href="#" class="link-category">INTERIOR</a>
+              <h2 class="title-item-on-trand">Сейчас в тренде: сад  на подоконнике</h2>          
             </div>
           </div>
-          <div class="item-on-trand">
-            <div class="picture-item-on-trand pic2">
-              <div class="frame-on-trand">
-                <a href="#" class="link-category">Food</a>
-            <h2 class="title-item-on-trand">сыры на красивых  картинках из интернета: какие они на вкус?</h2>
-            
-          </div>
-          </div>
-          </div>
-          <div class="item-on-trand">
-            <div class="picture-item-on-trand pic3">
-              <div class="frame-on-trand">
-                <a href="#" class="link-category">Lifestyle     tRAVEL    </a>
-            <h2 class="title-item-on-trand">СОБИРАЕМСЯ В ПЕРВЫЙ ПОХОД В ГОРЫ</h2>
-            
-          </div>
-          </div>
-          </div>
-          <div class="item-on-trand">
-            <div class="picture-item-on-trand pic4">
-              <div class="frame-on-trand">
-              <a href="#" class="link-category">food     health    </a>
-            <h2 class="title-item-on-trand">Сейчас в тренде: сКОЛЬКО ВИТАМИНА c В ЛИМОНАХ?</h2>
-          </div>
-          </div>
-          </div>
-      </section>
-      <aside class="sidebar">
+        </div>
+        <div class="item-on-trand">
+          <div class="picture-item-on-trand pic2">
+            <div class="frame-on-trand">
+              <a href="#" class="link-category">Food</a>
+          <h2 class="title-item-on-trand">сыры на красивых  картинках из интернета: какие они на вкус?</h2>
+          
+        </div>
+        </div>
+        </div>
+        <div class="item-on-trand">
+          <div class="picture-item-on-trand pic3">
+            <div class="frame-on-trand">
+              <a href="#" class="link-category">Lifestyle     tRAVEL    </a>
+          <h2 class="title-item-on-trand">СОБИРАЕМСЯ В ПЕРВЫЙ ПОХОД В ГОРЫ</h2>
+          
+        </div>
+        </div>
+        </div>
+        <div class="item-on-trand">
+          <div class="picture-item-on-trand pic4">
+            <div class="frame-on-trand">
+            <a href="#" class="link-category">food     health    </a>
+          <h2 class="title-item-on-trand">Сейчас в тренде: сКОЛЬКО ВИТАМИНА c В ЛИМОНАХ?</h2>
+        </div>
+        </div>
+        </div>
+    </section>
+    <main class="body">
+      <div class="container">
+       <aside class="sidebar">
         <div class="latest-posts">
           <h2 class="title-latest-posts">Новые посты</h2>
-          <div class="strip"></div>
         
           <section class="post-list">
-            <div class="latest-post">
-              <a href="#" class="content-latest-post">10 мест, ради которых стоит проснуться</a>
+            <a href="#" class="latest-post">
               <img class="picture-latest-post" src="images/2.jpg">
-              <div class="date-latest-post">14 июня 2019    </div>
-            </div>
-            <div class="latest-post">
-              <a href="#" class="content-latest-post">Йога для домашних</a>
+              <div class="link-and-date-latest-post">
+                <div class="date-latest-post">14 июня 2019    </div>
+                <h2 class="content-latest-post">10 мест, ради которых стоит проснуться</h2>
+              </div>
+            </a>
+            <a class="latest-post">
               <img class="picture-latest-post" src="images/151.jpg">
-              <div class="date-latest-post">14 июня 2019    </div>
-            </div>
-            <div class="latest-post">
-              <a href="#" class="content-latest-post">как мы превратили классное место в балкон    </a>
+              <div class="link-and-date-latest-post">
+                <div class="date-latest-post">14 июня 2019    </div>
+                <h2 class="content-latest-post">Йога для домашних</h2>
+              </div>
+            </a>
+            <a class="latest-post">
               <img class="picture-latest-post" src="images/45.jpg">
-              <div class="date-latest-post">14 июня 2019    </div>
-            </div>
-            <div class="latest-post">
-              <a href="#" class="content-latest-post">Кулинарный подход к науке    </a>
+              <div class="link-and-date-latest-post">
+               <div class="date-latest-post">14 июня 2019    </div>
+               <h2 class="content-latest-post">как мы превратили классное место в балкон    </h2>
+              </div>
+              
+            </a>
+            <a class="latest-post">
               <img class="picture-latest-post" src="images/501.jpg">
-              <div class="date-latest-post">14 июня 2019    </div>
-            </div>
-            <div class="latest-post">
-              <a href="#" class="content-latest-post">лучшие прически для распущенных волос    </a>
+              <div class="link-and-date-latest-post">
+               <div class="date-latest-post">14 июня 2019    </div>
+               <h2 class="content-latest-post">Кулинарный подход к науке    </h2>
+              </div>
+            </a>
+            <a class="latest-post">
               <img class="picture-latest-post" src="images/7.jpg">
-              <div class="date-latest-post">14 июня 2019    </div>
-            </div>
+              <div class="link-and-date-latest-post">
+               <div class="date-latest-post">14 июня 2019    </div>
+               <h2 class="content-latest-post">лучшие прически для распущенных волос    </h2>
+              </div>
+            </a>
           </section>
         </div>
         <div class="search-sidebar">
-          <button class="button-search">жмяк</button>
-          <input type="text" placeholder="Найти..." />
+          <input  class="search-sidebar-placeholder" type="text" placeholder="Найти..." />
+          <button class="button-search"></button>
+          
         </div>
         <div class="subscribe">
           <h2 class="subscribe-title">Рассылка</h2>
@@ -110,41 +123,53 @@
         </div>
         <div class="tags">
           <h2 class="title_tags">ТЕГИ</h2>
-          <div class="tag_list">
-            <div class="tag">Fashion</div>
-            <div class="tag">Interior</div>
-            <div class="tag">Lifestyle</div>
-            <div class="tag">ART</div>
-            <div class="tag">HEALTH</div>
-            <div class="tag">FOOD</div>
-            <div class="tag">MuSiC</div>
-            <div class="tag">travel</div>
+          <div class="tag-list">
+            <a href="#" class="tag">Fashion</a>
+            <a href="#" class="tag">Interior</a>
+            <a href="#" class="tag">Lifestyle</a>
+            <a href="#" class="tag">ART</a>
+            <a href="#" class="tag">HEALTH</a>
+            <a href="#" class="tag">FOOD</a>
+            <a href="#" class="tag">MuSiC</a>
+            <a href="#" class="tag">travel</a>
           </div>
         </div>
         <div class="categories">
           <h2 class="title-categories">Темы</h2>
-          <div class="list-categories">
-            <a href="#" class="category">Красота</a>
-            <a href="#" class="category">Здоровье</a>
-            <a href="#" class="category">Образ жизни</a>
-            <a href="#" class="category">Музыка</a>
-            <a href="#" class="category">Спорт</a>
-            <a href="#" class="category">Йога</a>
+          <div class="list-count-categories">
+            <div class="count-category">
+             <a href="#" class="category">Красота</a>
+             <a href="#" class="count">8</a>
+            </div>
+            <div class="count-category">
+              <a href="#" class="category">Здоровье</a>
+              <a href="#" class="count">62</a>
+             </div>
+            <div class="count-category">
+              <a href="#" class="category">Образ жизни</a>
+              <a href="#" class="count">28</a>
+            </div>
+            <div class="count-category">
+              <a href="#" class="category">Музыка</a>
+              <a href="#" class="count">145</a>
+            </div>
+            <div class="count-category">
+              <a href="#" class="category">Спорт</a>
+              <a href="#" class="count">4</a>
+            </div>
+            <div class="count-category">
+              <a href="#" class="category">Йога</a>
+              <a href="#" class="count">12</a>
+            </div> 
+           </div>
+           
           </div>
-          <div class="count-categories">
-            <a href="#" class="count-category">8</a>
-            <a href="#" class="count-category">62</a>
-            <a href="#" class="count-category">28</a>
-            <a href="#" class="count-category">145</a>
-            <a href="#" class="count-category">4</a>
-            <a href="#" class="count-category">12</a>
-          </div>
-        </div>
-      </aside>
-      <section class="post-list">
+        
+       </aside>
+       <section class="post-list">
         <div class="post-item">
           <div class="frame">
-            <h2 class="title-frame">10 мест, ради которых стоит проснуться на рассвете</h2>
+            <a href="#" class="title-frame">10 мест, ради которых стоит проснуться на рассвете</a>
             <div class="category-frame">Travel     Health    </div>
             <div class="date-author-frame">
               <div class="autor-frame">Неизвестный автор    </div>
@@ -203,38 +228,39 @@
           <p class="post-content">Подушки для дивана целесообразнее заказать в съемных чехлах на </p>
           <img class="post-picture" src="images/last-post5.jpg" alt="Подушки">
         </div>
-      </section>
-      <section class="shop">
-        <h2 class="title-shop">Наши изделия</h2>
-        <div class="list-product-shop">
-          <div class="item-product-shop">
-            <img class="picture-item-shop" src="images/shop-item-desk1.jpg">
-            <h2 class="title-item-shop">Подушки на диван</h2>
-            <p class="text-item-shop">Набор из двух подушек с модными принтами. Видео о создании здесь</p>
-            <div class="price-item-shop">1000 Р</div>
-            <div class="discount-price-item-shop">800 Р</div>
-            <a href="#" class="link-item-shop">В магазин    </a>
-          </div>
-          <div class="item-product-shop">
-            <img class="picture-item-shop" src="images/shop-item-desk2.jpg">
-            <h2 class="title-item-shop">Кукла «Зайчик»</h2>
-            <p class="text-item-shop">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящ</p>
-            <div class="price-item-shop">3500 Р</div>
-            <div class="discount-price-item-shop">500 Р</div>
-            <a href="#" class="link-item-shop">В магазин    </a>
-          </div>
-          <div class="item-product-shop">
-            <img class="picture-item-shop" src="images/shop-item-desk3.jpg">
-            <h2 class="title-item-shop">Шестиугольная рамка</h2>
-            <p class="text-item-shop">Необычная рамка для украшения дома из видео «Как сделать рамку </p>
-            <div class="price-item-shop">500 Р</div>
-            <div class="discount-price-item-shop">400 Р</div>
-            <a href="#" class="link-item-shop">В магазин    </a>
-          </div>
-          
-        </div>
-      </section>
+       </section>
+      </div>
     </main>
+    <section class="shop">
+      <h2 class="title-shop">Наши изделия</h2>
+      <div class="list-product-shop">
+        <div class="item-product-shop">
+          <img class="picture-item-shop" src="images/shop-item-desk1.jpg">
+          <h2 class="title-item-shop">Подушки на диван</h2>
+          <p class="text-item-shop">Набор из двух подушек с модными принтами. Видео о создании здесь</p>
+          <div class="price-item-shop">1000 Р</div>
+          <div class="discount-price-item-shop">800 Р</div>
+          <a href="#" class="link-item-shop">В магазин    </a>
+        </div>
+        <div class="item-product-shop">
+          <img class="picture-item-shop" src="images/shop-item-desk2.jpg">
+          <h2 class="title-item-shop">Кукла «Зайчик»</h2>
+          <p class="text-item-shop">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящ</p>
+          <div class="price-item-shop">3500 Р</div>
+          <div class="discount-price-item-shop">500 Р</div>
+          <a href="#" class="link-item-shop">В магазин    </a>
+        </div>
+        <div class="item-product-shop">
+          <img class="picture-item-shop" src="images/shop-item-desk3.jpg">
+          <h2 class="title-item-shop">Шестиугольная рамка</h2>
+          <p class="text-item-shop">Необычная рамка для украшения дома из видео «Как сделать рамку </p>
+          <div class="price-item-shop">500 Р</div>
+          <div class="discount-price-item-shop">400 Р</div>
+          <a href="#" class="link-item-shop">В магазин    </a>
+        </div>
+        
+      </div>
+    </section>
     <footer class="footer">
       <a class="social-networks-links">
         <a href="#" class="social-network-link">005-instagram</a>
