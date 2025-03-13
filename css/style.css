@@ -1,7 +1,6 @@
 /* !General settings*/
 body {
     margin: 0;
-    /*overflow-x: hidden;*/
 }
 
 .container {
@@ -131,7 +130,7 @@ input {
     position: absolute;
     bottom: -20px;
     left: 50%;
-    width: 10%;
+    width: 5%;
     height: 4px;
     background-color: #e1d9bd;
     transform: translateX(-50%);
