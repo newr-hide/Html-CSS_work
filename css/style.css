@@ -29,8 +29,7 @@ input {
     background-image: url(../images/banner-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    max-height: 448px;     
+    background-position: center;     
 }
 
 .header::before {
@@ -49,7 +48,7 @@ input {
     flex-direction: column;
     justify-content: space-between;
     min-height: 80px;
-    max-height: 448px;
+    
 }
 
 .logo-menu {
@@ -57,7 +56,7 @@ input {
     justify-content: space-between;
     height: 40px;
     padding-top: 28px;
-    padding-bottom: 125px;
+    padding-left: 4px;
 }
 
 .logo {
@@ -67,21 +66,24 @@ input {
 
 .title-intro {
     display: flex;
-    justify-content: center;
     max-width: 688px;
-    margin: auto;
+
     font-family: OpenSans-Bold, sans-serif;
     color: #ffffff;
     text-transform: uppercase;
     text-align: center;
     font-size: 45px;
     line-height: 75px;
-    padding-bottom: 146px;
+    margin: 0 auto;
+    padding-top: 105px;
+    padding-right: 22px;
+    padding-bottom: 125px;
 }
 
 .header-menu {
     display: flex; 
-    padding-top: 17px;
+    padding-top: 12px;
+    padding-right: 25px;
 }
 
 .header-menu-list {
@@ -107,14 +109,12 @@ input {
 
 .header-menu-list {
     list-style-type: none;
-    gap: 25px;
+    gap: 35px;
 }
 /*END HEADER*/
 
 /*!TRAND*/
-.on-trand {
-    height: 442px;
-}
+
 .title-on-trand {
     font-family: Opensans-Bold;
     font-size: 20px;
@@ -123,15 +123,19 @@ input {
     position: relative;
     display: flex;
     justify-content: center;
+    padding-top: 57px;
+    padding-right: 23px;
+    margin: 0;
 }
 
 .title-on-trand::before {
     content: '';
     position: absolute;
     bottom: -20px;
-    left: 50%;
-    width: 5%;
-    height: 4px;
+    left: 49.3%;
+    top: 95px;
+    width: 4%;
+    height: 3px;
     background-color: #e1d9bd;
     transform: translateX(-50%);
     z-index: -1;
@@ -139,25 +143,23 @@ input {
 
 .list-on-trand {
     display: flex;
+    justify-content: center;
     padding-top: 40px;
     width: 100%;
-    gap: 2px;
-}
-
-.item-on-trand {
-    flex: 1;
+    gap: 4px;
 }
 
 .title-item-on-trand {
     font-family: Open-sans Bold, sans-serif;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 19px;
+    line-height: 25px;
     text-transform: uppercase;
     color: #ffffff;
-    font-weight: bold; 
-    margin: 0px 40px 38px 30px;
+    font-weight: bold;
+    margin: 0px 35px 32px 0px;
     text-decoration: none;       
 }
+
 .title-item-on-trand:hover {
     color: #b59f5b;
 }
@@ -167,9 +169,9 @@ input {
     background-image: url(../images/trend1.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    overflow: hidden;
-    width: 414px;
-    height: 320px;
+    
+    width: 410px;
+    height: 303px;
 } 
 
 .pic2 {
@@ -177,8 +179,8 @@ input {
     background-image: url(../images/trend2.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    width: 414px;
-    height: 320px;
+    width: 410px;
+    height: 303px;
 } 
 
 .pic3 {
@@ -186,8 +188,8 @@ input {
     background-image: url(../images/trend3.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    width: 414px;
-    height: 320px;
+    width: 410px;
+    height: 303px;
 } 
 
 .pic4 {
@@ -195,8 +197,8 @@ input {
     background-image: url(../images/trend4.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    width: 414px;
-    height: 320px;
+    width: 410px;
+    height: 303px;
 } 
 
 .picture-item-on-trand {
@@ -226,14 +228,16 @@ input {
     border-color: #e1d9bd;
     width: 364px;
     z-index: 1;
-    
+    box-sizing: border-box;
+    padding: 28px 20px 0px 30px;
 }
 
 .links-category {
     display: flex;
-    gap: 15px;
+    flex-wrap: wrap;
+    margin: 0;
+    list-style: none;
     padding: 0;
-    margin: 39px 0px 0px 30px;
 }
 
 .link-category {
@@ -241,10 +245,11 @@ input {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 14px;
-    line-height: 40px;
+    line-height: 22px;
     font-weight: bold;
     color: #e1d9bd;
     z-index: 1;
+    padding-right: 12px;
 }
 
 .link-category:hover {
@@ -278,13 +283,14 @@ input {
     display: flex;
     flex-direction: row;
     padding-right: 110px;
-    margin-bottom: 59px;
+    margin-bottom: 57px;
+    box-sizing: content-box;
 }
 
 .frame {
     display: flex;
     flex-direction: column;
-    order: 2;
+    order: 1;
 }
 
 .title-frame {
@@ -302,16 +308,24 @@ input {
     color: #b59f5b;
 }
 
+.ul-category-frame{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
 .link-frame {
     font-family: Open-sans Bold, sans-serif;
     font-size: 14px;
-    line-height: 29px;
+    line-height: 20px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
     color: #b59f5b;
-    gap: 10px;
     text-decoration: none;
+    list-style: none;
+    padding-right: 8px;
 }
 
 .link-frame:hover {
@@ -338,12 +352,22 @@ input {
     font-family: OpenSans-Regular, sans-serif;
     font-size: 13px;
     margin: 5px;
+    padding-top: 5px;
+    padding-bottom: 2px;
 }
 
 .post-picture {
     width: 381px;
-    height: auto;
+    height: 296px;
+    display: block;   
+}
+
+.background-img-post {
+    display: block;
+    width: 381px;
+    height: 296px;
     margin-right: 31px;
+    background-color: #323232;
 }
 
 /*END POST-LIST*/
@@ -352,13 +376,9 @@ input {
 .sidebar {
     display: flex;
     flex-direction: column;
-    width: 288px;
+    width: 298px;
     order: 1;
-}
-
-.latest-posts {
-    display: flex;
-    flex-direction: column;
+    padding-top: 42px;
 }
 
 .title-latest-posts {
@@ -367,29 +387,32 @@ input {
     font-family: Open-sans Bold, sans-serif;
     font-size: 14px;
     line-height: 30px;
-    text-align: center;
     text-transform: uppercase;
     color: #000000;
-    font-weight: bold; 
+    font-weight: bold;
+    padding-left: 83px; 
 }
 
 .title-latest-posts::before {
     content: '';
     position: absolute;
-    bottom: -10px;
-    left: 50%;
-    width: 27%;
-    height: 4px;
+    bottom: -8px;
+    left: 36%;
+    width: 18%;
+    height: 3px;
     background-color: #e1d9bd;
     transform: translateX(-50%);
     z-index: -1;
 }
 
+.latest-post-list {
+    padding-right: 10px;
+}
+
 .latest-post {
     display: flex;
     text-decoration: none;
-    height: 70px;
-    margin-top: 22px;
+    padding-top: 24px;
     align-items: center;
     width: 288px; 
 }
@@ -399,11 +422,6 @@ input {
     width: 70px;
     height: 70px;
     transition: all 0.5s ease; 
-}
-
-.picture-latest-post:hover{
- width: 80px;
- height: 80px;
 }
 
 .link-and-date-latest-post {
@@ -419,6 +437,8 @@ input {
     font-weight: bold; 
     word-wrap: break-word;
     flex-shrink: 1;
+    margin: 0;
+    padding-top: 7px;
 }
 
 .date-latest-post {
@@ -433,22 +453,27 @@ input {
 /*search*/
 .search-sidebar {
     display: flex;
-    justify-content:space-between;
-    margin-top: 60px;
-    display: flex;
+    margin-top: 52px;
 }
 
 .search-sidebar-placeholder {
     font-size: 13px;
     line-height: 40px;
-    width: 222px;
+    width: 202px;
+    margin: 0; 
+    
+}
+
+.search-sidebar-placeholder:focus {
+    outline: none;
+    border: 1px solid #b59f5b;
 }
 
 .button-search {
     background-image: url(../svg/search.svg);
     background-color: #b59f5b;
     background-repeat: no-repeat;
-    background-size: 70%;
+    background-size: 40%;
     background-position: 50% 50%;
     border: none;
     width: 48px;
@@ -469,8 +494,8 @@ input {
     line-height: 29px;
     text-transform: uppercase;
     text-align:center;
-    margin-top: 60px;
-    margin-bottom: 40px;
+    margin-top: 53px;
+    padding-right: 28px;
     color: black;
 }
 
@@ -481,29 +506,41 @@ input {
 .subscribe-title::before {
     position:absolute;
     content: "";
-    left: 50%;
+    left: 45%;
     transform: translateX(-50%);
     width: 66px;
     bottom: -10px;
-    height: 4px;
+    height: 3px;
     background-color: #e1d9bd;   
 }
 
 .email {
     font-size: 14px;
     line-height: 40px;
+    margin-top: 20px;
+    width: 271px;
+    height: 49px;
+}
+
+.email:focus {
+    outline: none;
+    border: 1px solid #b59f5b;
 }
 
 .subscribe-button {
     background-color: #b59f5b;
     font-family: Open-sans Bold, sans-serif;
     font-size: 14px;
+    color: #ffffff;
     line-height: 40px;
     text-transform: uppercase;
     text-align:center;
     font-weight: bold;
     border: none;  
     user-select: none;
+    margin-top: 12px;
+    width: 269px;
+    height: 49px;
 }
 
 .subscribe-button:hover {
@@ -516,7 +553,8 @@ input {
 .tags {
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: 41px;
+    padding-right: 25px;
 }
 
 .title_tags {
@@ -537,28 +575,33 @@ input {
     transform: translateX(-50%);
     width: 66px;
     bottom: -10px;
-    height: 4px;
+    height: 3px;
     background-color: #e1d9bd;  
 }
 
 .tag-list {
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
+    margin-top: 12px;
+    padding: 0;
+}
 
-    margin-top: 30px;
-
+.li-tag {
+    list-style: none
 }
 
 .tag {
     border-style: solid;
-    border-color: #f4f3f1; 
+    border-color: #e3dfd2;
+    color: #000000;
     font-family: Open-sans Bold, sans-serif;
     font-size: 12px;
-    line-height: 29px;
-    font-weight: bold;
+    line-height: 40px;
+    font-weight: 700;
     text-transform: uppercase;
     text-decoration: none; 
-    padding:0px 9px 0px 9px;
+    padding:3px 8px 3px 8px;
     margin: 5px;
 }
 
@@ -571,7 +614,7 @@ input {
 .categories {
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .title-categories {
@@ -583,29 +626,31 @@ input {
     text-transform: uppercase;
     text-align: center;
     display: inline-block; 
-    bottom: 24px;
     color: black;
+    padding-right: 20px;
 }
 
 .title-categories::before {
     position:absolute;
     content: "";
-    left: 50%;
+    left: 46%;
     transform: translateX(-50%);
     width: 69px;
-    bottom: -10px;
-    height: 4px;
+    bottom: -8px;
+    height: 3px;
     background-color: #e1d9bd;  
-}
-
-.list-categories {
-    display: flex;
-    flex-direction: column;
 }
 
 .list-count-categories {
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+}
+
+.li-count-category {
+    list-style: none;
 }
 
 .count-category {
@@ -641,6 +686,7 @@ input {
     font-family: Open-sans Bold, sans-serif;
     font-size: 14px;
     line-height: 47px;
+    color: #b59f5b;
     font-weight: bold;
     text-align: left;
     text-decoration: none;
@@ -663,29 +709,35 @@ input {
     font-size: 20px;
     line-height: 29px;
     font-weight: bold;
+    
+    text-transform: uppercase;
     text-align: center;
-    margin-bottom: 46px;
+    margin: 0;
+    padding-right: 30px;
+    padding-top: 5px;
 }
 
 .title-shop::before {
     position:absolute;
     content: "";
-    left: 50%;
+    left: 49%;
     transform: translateX(-50%);
     width: 66px;
     bottom: -10px;
-    height: 4px;
+    height: 3px;
     background-color: #e1d9bd;
 }
 
 .list-product-shop {
     display: flex;
-    justify-content: space-between;
+    margin: 0;
+    margin-top: 35px;
+    margin-left: 10px;
+    gap: 120px;
 }
 
 .item-product-shop {
     position: relative;
-    gap: 113px;
     margin-bottom: 22px;
 }
 
@@ -696,6 +748,7 @@ input {
 .title-item-shop {
     font-family: Open-sans Bold, sans-serif;
     font-size: 20px;
+    text-transform: uppercase;
     line-height: 24px;
     font-weight: bold;
 }
@@ -760,8 +813,6 @@ input {
     border-style: none;
     width: 140px;
     height: 47px;
-    margin-right: 22px;
-    margin-bottom: 27px;
 }
 
 .btn-item-shop:hover {
@@ -785,6 +836,7 @@ input {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    margin-top: 70px;
 }
 
 .social-networks-links {
@@ -794,7 +846,8 @@ input {
     background-color: #f4f7f6;
     gap: 25px;
     height: 82px;
-    margin-bottom: 74px;
+    margin: 0;
+    margin-right: 35px;
 }
 
 .social-network-link {
@@ -804,12 +857,12 @@ input {
 
 .copyrights {
     margin: 0 auto;
-
     font-family: Open-sans Bold, sans-serif;
     font-size: 12px;
     line-height: 40px;
     font-weight: bold;
     color: #e3dfd2;
+    margin-top: 60px;
 }
 /*END FOOTER*/
 /*POPUP*/
