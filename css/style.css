@@ -30,7 +30,7 @@ input {
     background-image: url(../images/banner-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;     
+    background-position: center;    
 }
 
 .header::before {
@@ -138,10 +138,15 @@ input {
 
 .list-on-trand {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding-top: 40px;
     width: 100%;
     gap: 4px;
+}
+
+.item-on-trand {
+    max-width: 35%;
 }
 
 .title-item-on-trand {
@@ -164,7 +169,8 @@ input {
     background-image: url(../images/trend1.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    
+    background-size: cover;
+    object-fit: contain;
     width: 410px;
     height: 303px;
 } 
@@ -174,6 +180,7 @@ input {
     background-image: url(../images/trend2.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     width: 410px;
     height: 303px;
 } 
@@ -183,6 +190,7 @@ input {
     background-image: url(../images/trend3.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     width: 410px;
     height: 303px;
 } 
@@ -192,6 +200,7 @@ input {
     background-image: url(../images/trend4.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     width: 410px;
     height: 303px;
 } 
@@ -221,7 +230,7 @@ input {
     flex-direction: column;
     border: solid;
     border-color: #e1d9bd;
-    width: 364px;
+    width: 88.78%;
     z-index: 1;
     box-sizing: border-box;
     padding: 28px 20px 0px 30px;
@@ -259,12 +268,12 @@ input {
 .body {
     display:flex;
     justify-content: center;
-    /*overflow: hidden; /*скролл пропал*/
+    /* overflow: hidden; */
 }
 
 .body-container {
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
 }
 
 /*!POST-LIST*/
@@ -272,13 +281,12 @@ input {
     display: flex;
     flex-direction: column;
     margin-top: 65px;
-    
 }
 
 .post-item {
     display: flex;
     flex-direction: row;
-    padding-right: 110px;
+    padding-right: 10px;
     margin-bottom: 57px;
     box-sizing: content-box;
 }
@@ -376,14 +384,14 @@ input {
 .sidebar {
     display: flex;
     flex-direction: column;
-    width: 298px;
+    max-width: 298px;
     order: 1;
     padding-top: 42px;
+    /* overflow-x: hidden */
 }
 
 .title-latest-posts {
     position: relative;
-    width: 100%;
     font-family: Open-sans Bold, sans-serif;
     font-size: 14px;
     line-height: 30px;
@@ -397,7 +405,7 @@ input {
     content: '';
     position: absolute;
     bottom: -8px;
-    left: 36%;
+    left: 46%;
     width: 18%;
     height: 3px;
     background-color: #e1d9bd;
@@ -407,6 +415,7 @@ input {
 
 .latest-post-list {
     padding-right: 10px;
+    
 }
 
 .latest-post {
@@ -424,10 +433,6 @@ input {
     transition: all 0.5s ease; 
 }
 
-.link-and-date-latest-post {
- height: 70px;
-}
-
 .content-latest-post {
     font-family: Open-sans Bold, sans-serif;
     font-size: 14px;
@@ -436,7 +441,6 @@ input {
     color: #000000;
     font-weight: bold; 
     word-wrap: break-word;
-    flex-shrink: 1;
     margin: 0;
     padding-top: 7px;
 }
@@ -461,7 +465,6 @@ input {
     line-height: 40px;
     width: 202px;
     margin: 0; 
-    
 }
 
 .search-sidebar-placeholder:focus {
@@ -503,6 +506,7 @@ input {
     display: flex;
     flex-direction: column;
 }
+
 .subscribe-title::before {
     position:absolute;
     content: "";
@@ -723,7 +727,7 @@ input {
     margin: 0;
     margin-top: 35px;
     margin-left: 10px;
-    gap: 120px;
+    gap: 60px;
 }
 
 .item-product-shop {
@@ -731,6 +735,7 @@ input {
     margin-bottom: 22px;
     display: flex;
     flex-direction: column;
+
 }
 
 .frame-item-product-shop {
@@ -860,6 +865,10 @@ input {
 }
 /*END FOOTER*/
 /*POPUP*/
+/* ._hidden {
+    display: none;
+} */
+
 #popup {
     position: fixed;
     top: 50%;
@@ -870,6 +879,9 @@ input {
     height: 590px;
     z-index: 3;
     background-color: white;
+}
+
+._hidden {
     display: none;
 }
 
@@ -881,15 +893,14 @@ input {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 2;
-    display: none;
 }
 
 .button-close {
     position: absolute;      
     right: 0px;             
     top: -30px;               
-    width: 24px;             
-    height: 24px;            
+    width: 20px;             
+    height: 20px;            
     cursor: pointer;       
     outline: none; 
     background-image: url(../svg/form-x.svg);
@@ -912,6 +923,7 @@ input {
     position: relative;
     display: flex;
     justify-content: center;
+    margin-top: 46px;
 }
 
 .title-popup::before {
@@ -929,7 +941,7 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 47px;
+    margin-top: 24px;
 }
 
 #select-popup-label {
@@ -941,14 +953,14 @@ input {
 
 #select-popup {
     position: relative;
-    padding-left: 10px;
+    padding-left: 17px;
     width: 329px;
     height: 49px;
     background-color: #e3dfd2;
     background-image: url('/svg/form-arrows.svg');
     background-repeat: no-repeat;
     background-position: right 8px top 14px;
-    background-size: 12px;
+    background-size: 11px;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -963,7 +975,7 @@ input {
 .radio {
     display: inline-block;
     vertical-align: middle;
-    margin: 30px 20px 10px 30px;
+    margin: 15px 20px 8px 30px;
 }
 
 .radio-title {
@@ -975,7 +987,6 @@ input {
 
 .radio-group {
     display: flex;
-    gap: 5px; 
     align-items: center;
 }
 
@@ -985,7 +996,11 @@ input {
     height: 20px;
     border: 1px solid #b59f5b; 
     border-radius: 50%; 
-    appearance: none; 
+    appearance: none;  
+}
+
+.label-radio {
+    margin-right: 10px;
 }
 
 .radio input[type="radio"]::before {
@@ -1018,6 +1033,7 @@ input {
     font-size: 13px;
     line-height: auto;
     font-weight: 100;
+    max-width: 320px;
 }
 
 .text-placeholder {
@@ -1031,7 +1047,7 @@ input {
     resize: none;
     padding-left: 10px;
     padding-top: 10px;
-    margin-bottom: 26px; 
+    margin-bottom: 14px; 
 }
 
 .button-popup {
@@ -1063,6 +1079,10 @@ input {
     .header { 
         background-image: url(../images/banner-mobile.jpg);
         height: 638px;
+    }
+
+    ._hidden {
+        display: none;
     }
 
     .logo-menu {
@@ -1160,6 +1180,8 @@ input {
         }
 
         .item-on-trand {
+            max-width: 100%;
+            width: 100%;
             max-height: 231px;
         }
         
@@ -1176,10 +1198,9 @@ input {
         }
         
         .frame-on-trand {
-            width: 329px;
+            width: calc(360px + ((100vw - 320px) / 50) * 10); /*сделал чтобы рамка тоже тянулась(кажется так красивее стационарной) либо width: 329px; */
             padding: 26px 0px 0px 16px;
             margin: 15px;
-
         }
         
         /*END TRAND*/
@@ -1277,13 +1298,12 @@ input {
     
     /*!SIDE BAR*/
     .sidebar {
-        width: 329px;
-        margin: 0 auto;
-        padding-top: 35px;
+        max-width: 330px;
+        margin: 0;
+        padding-top: 45px;
     }
    
     .title-latest-posts {
-        width: 100%;
         font-size: 16px;
         line-height: 29px; 
     }
@@ -1497,12 +1517,16 @@ input {
     }
     /*END FOOTER*/
     /*POPUP*/
+    ._hidden {
+        display: none;
+    }
+
     #popup {
         position: fixed;
         top: 42.3%;
         width: 329px;
         height: 548px;
-        display: none;
+
     }
 
     .button-close {              
@@ -1701,7 +1725,7 @@ input {
     }
 
     .item-on-trand {
-        max-width: 49.7%;
+        max-width: 49%;
         max-height: 240px;
     }
     
@@ -1735,13 +1759,15 @@ input {
 
     .body-container {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     /*!POST-LIST*/
     .post-list {
         margin: 0;
         margin-top: 25px;
+        max-width: 390px;
     }
 
     .post-item {
@@ -1816,7 +1842,7 @@ input {
     
     /*!SIDE BAR*/
     .sidebar {
-        width: 280px;
+        width: 260px;
         margin: 0;
         margin-left: 35px;
         padding-top: 35px;
@@ -1911,7 +1937,7 @@ input {
         /*SHOP*/
     .shop-container {
         display: flex;
-        width: 698px;
+        max-width: 698px;
         margin: 0 auto;
         margin-top: 43px ;
     }
@@ -1934,6 +1960,7 @@ input {
     .list-product-shop {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         margin: 0;
         margin-top: 35px;
         gap: 20px;
@@ -2016,10 +2043,9 @@ input {
     #popup {
         width: 390px;
         height: 596px;
-        display: none;
-    }
 
-    #popup-overlay {
+    }
+    ._hidden {
         display: none;
     }
 
